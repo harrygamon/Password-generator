@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1F2937;
+	font-family: "Karla", sans-serif;
+	color: #fff;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 550px;
+	padding: 0 20px;
+	margin: 60px auto 0;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: -2.5px;
+	font-weight: 800;
+	margin: 0 0 10px 0;
+}
+
+.title-diff {
+	color: #4ADF86;
+}
+
+.description {
+	color: #D5D4D8;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	background-color: #10B981;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.btn:hover {
+	background-color: #34d399;
+}
+
+hr {
+	margin: 40px 100px;
+	border: none;
+	height: 1px;
+	background-color: #2F3E53;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin: 0 auto 20px;
+}
+
+.password-box {
+	position: relative;
+	background-color: #2F3E53;
+	border-radius: 6px;
+	width: 250px;
+	height: 50px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.password {
+	color: #55F991;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 90%;
+}
+
+.password:hover {
+	overflow: visible;
+	white-space: normal;
+	word-break: break-all;
+	background-color: #36465F;
+	padding: 5px;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+.copy-btn {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+	background: none;
+	color: #ccc;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+.copy-btn:hover {
+	color: #55F991;
+}
+
+.settings {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: #2F3E53;
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 600px;
+	margin: 40px auto;
+}
+
+.settings label {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #D5D4D8;
+}
+
+.settings input[type="range"] {
+	width: 120px;
+	accent-color: #10B981;
+}
+
+#generate-btn {
+	background-color: #10B981;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 6px 12px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+#generate-btn:hover {
+	background-color: #34d399;
+}

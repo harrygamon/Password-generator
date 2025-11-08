@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="hero">
+		<h1>Generate a <br><span class="title-diff">random password</span></h1>
+		<p class="description">Never use an insecure password again.</p>
+		<button class="btn" id="main-generate-btn">Generate Password</button>
+	</div>
+
+	<hr />
+
+	<div class="container">
+		<div class="password-box">
+			<p class="password" id="password"></p>
+			<button class="copy-btn" onclick="copyPassword('password')">Copy</button>
+		</div>
+		<div class="password-box">
+			<p class="password" id="password-2"></p>
+			<button class="copy-btn" onclick="copyPassword('password-2')">Copy</button>
+		</div>
+	</div>
+
+	<div class="settings">
+		<label>Length: <span id="length-display">12</span></label>
+		<input type="range" id="password-length" min="4" max="32" value="12">
+
+		<label><input type="checkbox" id="include-uppercase" checked> Uppercase</label>
+		<label><input type="checkbox" id="include-lowercase" checked> Lowercase</label>
+		<label><input type="checkbox" id="include-numbers" checked> Numbers</label>
+		<label><input type="checkbox" id="include-symbols" checked> Symbols</label>
+
+		<button id="generate-btn">Generate Passwords</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
